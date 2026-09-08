@@ -1,0 +1,98 @@
+﻿<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width,initial-scale=1" name="viewport" />
+    <title>Create Your Account | STACKLY Digital Library</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&amp;family=Inter:wght@400;500;600;700&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link href="style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <header>
+      <a class="logo" href="index.html"><img class="brand-logo" src="images/stackly-logo-white-trimmed.webp" alt="STACKLY" /></a
+      ><button aria-label="Toggle navigation" class="nav-toggle">☰</button>
+      <nav class="auth-nav">
+        <a href="index.html">Home</a
+        ><a href="about.html">About</a
+        ><a href="services.html">Services</a
+        ><a href="categories.html">Categories</a
+        ><a href="blog.html">Blog</a
+        ><a href="contact.html">Contact</a
+        ><a class="signin" href="signin.html">Sign In</a>
+      </nav>
+    </header>
+    <main>
+      <section class="form-page" id="register-section">
+        <div class="auth-form-actions">
+          <a class="auth-back-home" href="index.html" aria-label="Back to home">Back to Home</a>
+        </div>
+        <div class="form-copy">
+          <a class="auth-image-logo" href="index.html"
+            ><img class="brand-logo" src="images/stackly-logo-white-trimmed.webp" alt="STACKLY" /></a
+          >
+          <p class="eyebrow"></p>
+          <h1>Create Your Account</h1>
+          <p>
+            Join the library and start building your personal reading
+            collection.
+          </p>
+        </div>
+        <div class="auth-panel-stack">
+          <form action="signin.html" class="panel" id="registerForm">
+            <label>Full name<input name="fullName" placeholder="Your name" required="" /></label
+            ><label
+              >Email address<input
+                name="email"
+                placeholder="reader@example.com"
+                required=""
+                type="email" /></label
+            ><label
+              >Password<input
+                name="password"
+                placeholder="Create a password"
+                required=""
+                type="password" /></label
+            ><label
+              >Confirm password<input
+                name="confirmPassword"
+                placeholder="Confirm your password"
+                required=""
+                type="password" /></label
+            ><label class="custom-select-label"
+              >Reading interest<input
+                class="custom-select-value"
+                name="readingInterest"
+                value="Fiction & Literature"
+                tabindex="-1"
+                aria-hidden="true"
+              />
+              <div class="custom-select" data-custom-select>
+                <button
+                  class="custom-select-button"
+                  type="button"
+                  aria-expanded="false"
+                >
+                  <span>Fiction &amp; Literature</span>
+                </button>
+                <div class="custom-select-menu" role="listbox">
+                  <button type="button" role="option">Fiction &amp; Literature</button>
+                  <button type="button" role="option">Business &amp; Finance</button>
+                  <button type="button" role="option">Technology</button>
+                  <button type="button" role="option">Science &amp; Research</button>
+                </div>
+              </div></label
+            ><p class="form-success" id="registerSuccess" aria-live="polite"></p
+            ><button class="primary" type="submit">Create Account</button>
+            <p class="account-switch">
+              Already a member? <a href="signin.html">Sign in</a>
+            </p>
+          </form>
+        </div>
+      </section>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>

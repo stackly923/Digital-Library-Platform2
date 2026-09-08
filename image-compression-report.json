@@ -1,0 +1,498 @@
+[
+  {
+    "file": "stackly-logo-preview-trimmed.jpg.webp",
+    "before": 16058,
+    "after": 16058,
+    "unchanged": true
+  },
+  {
+    "file": "stackly-logo-preview-trimmed.webp",
+    "before": 8958,
+    "after": 8958,
+    "unchanged": true
+  },
+  {
+    "file": "stackly-logo-preview.jpg.webp",
+    "before": 15118,
+    "after": 15118,
+    "unchanged": true
+  },
+  {
+    "file": "stackly-logo-preview.webp",
+    "before": 8402,
+    "after": 8402,
+    "unchanged": true
+  },
+  {
+    "file": "images/404-library-background.jpg.webp",
+    "before": 1780022,
+    "after": 96294,
+    "sourceWidth": 1672,
+    "width": 1421,
+    "quality": 77
+  },
+  {
+    "file": "images/404-library-background.webp",
+    "before": 1510366,
+    "after": 95986,
+    "sourceWidth": 1672,
+    "width": 1421,
+    "quality": 77
+  },
+  {
+    "file": "images/about-knowledge-collection.jpg.webp",
+    "before": 1618508,
+    "after": 97278,
+    "sourceWidth": 1536,
+    "width": 942,
+    "quality": 81
+  },
+  {
+    "file": "images/about-knowledge-collection.webp",
+    "before": 1518476,
+    "after": 97306,
+    "sourceWidth": 1536,
+    "width": 1109,
+    "quality": 75
+  },
+  {
+    "file": "images/about-learning-community.jpg.webp",
+    "before": 1515640,
+    "after": 94798,
+    "sourceWidth": 1536,
+    "width": 1109,
+    "quality": 76
+  },
+  {
+    "file": "images/about-learning-community.webp",
+    "before": 1417180,
+    "after": 94638,
+    "sourceWidth": 1536,
+    "width": 1109,
+    "quality": 76
+  },
+  {
+    "file": "images/about-modern-library.jpg.webp",
+    "before": 2079432,
+    "after": 95488,
+    "sourceWidth": 1536,
+    "width": 680,
+    "quality": 81
+  },
+  {
+    "file": "images/about-modern-library.webp",
+    "before": 1991092,
+    "after": 97964,
+    "sourceWidth": 1536,
+    "width": 680,
+    "quality": 82
+  },
+  {
+    "file": "images/about-reader-researching.jpeg.webp",
+    "before": 926238,
+    "after": 94750,
+    "sourceWidth": 1600,
+    "width": 1600,
+    "quality": 82
+  },
+  {
+    "file": "images/about-reader-researching.webp",
+    "before": 926238,
+    "after": 94750,
+    "sourceWidth": 1600,
+    "width": 1600,
+    "quality": 82
+  },
+  {
+    "file": "images/blog-community-learning.jpg.webp",
+    "before": 1321010,
+    "after": 96154,
+    "sourceWidth": 1536,
+    "width": 1109,
+    "quality": 78
+  },
+  {
+    "file": "images/blog-community-learning.webp",
+    "before": 1235018,
+    "after": 96174,
+    "sourceWidth": 1536,
+    "width": 1109,
+    "quality": 78
+  },
+  {
+    "file": "images/blog-digital-reading.jpg.webp",
+    "before": 1126208,
+    "after": 96204,
+    "sourceWidth": 1600,
+    "width": 1600,
+    "quality": 77
+  },
+  {
+    "file": "images/blog-digital-reading.webp",
+    "before": 1035658,
+    "after": 96400,
+    "sourceWidth": 1600,
+    "width": 1600,
+    "quality": 77
+  },
+  {
+    "file": "images/blog-reading-habits.jpg.webp",
+    "before": 1244014,
+    "after": 96672,
+    "sourceWidth": 1086,
+    "width": 923,
+    "quality": 78
+  },
+  {
+    "file": "images/blog-reading-habits.webp",
+    "before": 1141944,
+    "after": 96388,
+    "sourceWidth": 1086,
+    "width": 923,
+    "quality": 78
+  },
+  {
+    "file": "images/blog-research-story.jpg.webp",
+    "before": 1702020,
+    "after": 96540,
+    "sourceWidth": 1536,
+    "width": 942,
+    "quality": 78
+  },
+  {
+    "file": "images/blog-research-story.webp",
+    "before": 1605818,
+    "after": 96146,
+    "sourceWidth": 1536,
+    "width": 942,
+    "quality": 78
+  },
+  {
+    "file": "images/categories-book-shelf.jpg.webp",
+    "before": 1256126,
+    "after": 96926,
+    "sourceWidth": 1536,
+    "width": 1305,
+    "quality": 75
+  },
+  {
+    "file": "images/categories-book-shelf.webp",
+    "before": 1176494,
+    "after": 96800,
+    "sourceWidth": 1536,
+    "width": 1305,
+    "quality": 75
+  },
+  {
+    "file": "images/categories-explore-screen.jpg.webp",
+    "before": 1439130,
+    "after": 97774,
+    "sourceWidth": 1536,
+    "width": 1109,
+    "quality": 76
+  },
+  {
+    "file": "images/categories-explore-screen.webp",
+    "before": 1349914,
+    "after": 97520,
+    "sourceWidth": 1536,
+    "width": 1109,
+    "quality": 76
+  },
+  {
+    "file": "images/categories-featured-books.jpg.webp",
+    "before": 1556902,
+    "after": 97762,
+    "sourceWidth": 1536,
+    "width": 942,
+    "quality": 81
+  },
+  {
+    "file": "images/categories-featured-books.webp",
+    "before": 1466060,
+    "after": 97724,
+    "sourceWidth": 1536,
+    "width": 942,
+    "quality": 81
+  },
+  {
+    "file": "images/categories-subject-display.jpeg.webp",
+    "before": 1160168,
+    "after": 96608,
+    "sourceWidth": 1600,
+    "width": 1360,
+    "quality": 76
+  },
+  {
+    "file": "images/categories-subject-display.webp",
+    "before": 1160168,
+    "after": 96608,
+    "sourceWidth": 1600,
+    "width": 1360,
+    "quality": 76
+  },
+  {
+    "file": "images/contact-help-desk.jpg.webp",
+    "before": 1621226,
+    "after": 94142,
+    "sourceWidth": 1402,
+    "width": 860,
+    "quality": 76
+  },
+  {
+    "file": "images/contact-help-desk.webp",
+    "before": 1543280,
+    "after": 94268,
+    "sourceWidth": 1402,
+    "width": 860,
+    "quality": 76
+  },
+  {
+    "file": "images/contact-library-team.jpg.webp",
+    "before": 1116052,
+    "after": 94642,
+    "sourceWidth": 1600,
+    "width": 1360,
+    "quality": 79
+  },
+  {
+    "file": "images/contact-library-team.webp",
+    "before": 1039482,
+    "after": 94734,
+    "sourceWidth": 1600,
+    "width": 1360,
+    "quality": 79
+  },
+  {
+    "file": "images/contact-membership-card.jpg.webp",
+    "before": 1120172,
+    "after": 94680,
+    "sourceWidth": 1536,
+    "width": 1305,
+    "quality": 79
+  },
+  {
+    "file": "images/contact-membership-card.webp",
+    "before": 1082012,
+    "after": 94380,
+    "sourceWidth": 1536,
+    "width": 1305,
+    "quality": 79
+  },
+  {
+    "file": "images/hero-about.jpg.webp",
+    "before": 1573912,
+    "after": 96646,
+    "sourceWidth": 1536,
+    "width": 1109,
+    "quality": 77
+  },
+  {
+    "file": "images/hero-about.webp",
+    "before": 1475040,
+    "after": 96466,
+    "sourceWidth": 1536,
+    "width": 1109,
+    "quality": 77
+  },
+  {
+    "file": "images/hero-blog.jpg.webp",
+    "before": 1314288,
+    "after": 96662,
+    "sourceWidth": 1536,
+    "width": 1305,
+    "quality": 79
+  },
+  {
+    "file": "images/hero-blog.webp",
+    "before": 1205444,
+    "after": 96524,
+    "sourceWidth": 1536,
+    "width": 1305,
+    "quality": 79
+  },
+  {
+    "file": "images/hero-categories.jpg.webp",
+    "before": 1230512,
+    "after": 95466,
+    "sourceWidth": 1600,
+    "width": 1360,
+    "quality": 77
+  },
+  {
+    "file": "images/hero-categories.webp",
+    "before": 1146322,
+    "after": 95372,
+    "sourceWidth": 1600,
+    "width": 1360,
+    "quality": 77
+  },
+  {
+    "file": "images/hero-contact.jpg.webp",
+    "before": 922354,
+    "after": 94698,
+    "sourceWidth": 1600,
+    "width": 1600,
+    "quality": 87
+  },
+  {
+    "file": "images/hero-contact.webp",
+    "before": 825962,
+    "after": 95766,
+    "sourceWidth": 1600,
+    "width": 1600,
+    "quality": 87
+  },
+  {
+    "file": "images/hero-home.jpg.webp",
+    "before": 1569038,
+    "after": 93664,
+    "sourceWidth": 1536,
+    "width": 1109,
+    "quality": 75
+  },
+  {
+    "file": "images/hero-home.webp",
+    "before": 1445966,
+    "after": 97936,
+    "sourceWidth": 1536,
+    "width": 1109,
+    "quality": 76
+  },
+  {
+    "file": "images/hero-services.jpg.webp",
+    "before": 1618508,
+    "after": 97278,
+    "sourceWidth": 1536,
+    "width": 942,
+    "quality": 81
+  },
+  {
+    "file": "images/hero-services.webp",
+    "before": 1518476,
+    "after": 97306,
+    "sourceWidth": 1536,
+    "width": 1109,
+    "quality": 75
+  },
+  {
+    "file": "images/register-library-reading.jpg.webp",
+    "before": 1825162,
+    "after": 97018,
+    "sourceWidth": 1122,
+    "width": 810,
+    "quality": 77
+  },
+  {
+    "file": "images/register-library-reading.webp",
+    "before": 1562652,
+    "after": 96712,
+    "sourceWidth": 1122,
+    "width": 810,
+    "quality": 77
+  },
+  {
+    "file": "images/services-audiobooks.jpg.webp",
+    "before": 1632128,
+    "after": 97280,
+    "sourceWidth": 1536,
+    "width": 942,
+    "quality": 76
+  },
+  {
+    "file": "images/services-audiobooks.webp",
+    "before": 1531172,
+    "after": 97220,
+    "sourceWidth": 1536,
+    "width": 942,
+    "quality": 76
+  },
+  {
+    "file": "images/services-digital-platform.jpg.webp",
+    "before": 1282258,
+    "after": 97866,
+    "sourceWidth": 1536,
+    "width": 1109,
+    "quality": 80
+  },
+  {
+    "file": "images/services-digital-platform.webp",
+    "before": 1189632,
+    "after": 97758,
+    "sourceWidth": 1536,
+    "width": 1109,
+    "quality": 80
+  },
+  {
+    "file": "images/services-library-kiosk.jpg.webp",
+    "before": 1562740,
+    "after": 95450,
+    "sourceWidth": 1536,
+    "width": 942,
+    "quality": 78
+  },
+  {
+    "file": "images/services-library-kiosk.webp",
+    "before": 1518136,
+    "after": 95072,
+    "sourceWidth": 1536,
+    "width": 942,
+    "quality": 78
+  },
+  {
+    "file": "images/services-research-desk.jpg.webp",
+    "before": 1097112,
+    "after": 95906,
+    "sourceWidth": 1600,
+    "width": 1600,
+    "quality": 78
+  },
+  {
+    "file": "images/services-research-desk.webp",
+    "before": 996798,
+    "after": 95600,
+    "sourceWidth": 1600,
+    "width": 1600,
+    "quality": 78
+  },
+  {
+    "file": "images/signin-library-role.jpg.webp",
+    "before": 1763456,
+    "after": 94202,
+    "sourceWidth": 1672,
+    "width": 1421,
+    "quality": 75
+  },
+  {
+    "file": "images/signin-library-role.webp",
+    "before": 1480610,
+    "after": 93540,
+    "sourceWidth": 1672,
+    "width": 1421,
+    "quality": 75
+  },
+  {
+    "file": "images/stackly-logo-white-trimmed.jpg.webp",
+    "before": 70,
+    "after": 70,
+    "unchanged": true
+  },
+  {
+    "file": "images/stackly-logo-white-trimmed.webp",
+    "before": 3292,
+    "after": 3292,
+    "unchanged": true
+  },
+  {
+    "file": "images/stackly-logo-white.jpg.webp",
+    "before": 80,
+    "after": 80,
+    "unchanged": true
+  },
+  {
+    "file": "images/stackly-logo-white.webp",
+    "before": 3320,
+    "after": 3320,
+    "unchanged": true
+  }
+]

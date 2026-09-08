@@ -1,0 +1,436 @@
+﻿<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Librarian / Admin Dashboard | STACKLY Digital Library</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="dash-shell">
+      <button class="dash-hamburger" type="button" aria-label="Open dashboard menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <button class="dash-scrim" type="button" aria-label="Close dashboard menu"></button>
+      <aside class="dash-sidebar">
+        <div class="dash-brand"><img class="brand-logo" src="images/stackly-logo-white-trimmed.webp" alt="STACKLY" /></div>
+        <div class="dash-user">
+          <b>Librarian / Admin</b><small></small>
+        </div>
+        <nav class="dash-menu">
+          <a class="active" href="#overview" data-view="overview"><span class="dash-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 11.5 12 5l8 6.5V20h-5v-5H9v5H4z" /></svg></span>Overview</a>
+          <a href="#catalogue" data-view="catalogue"><span class="dash-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 5.5A4.5 4.5 0 0 1 12 9a4.5 4.5 0 0 1 7-3.5V19a4.5 4.5 0 0 0-7 1 4.5 4.5 0 0 0-7-1z" /></svg></span>Catalogue</a>
+          <a href="#members" data-view="members"><span class="dash-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 11a3 3 0 1 1 0-6 3 3 0 0 1 0 6Zm8 0a3 3 0 1 1 0-6 3 3 0 0 1 0 6ZM4 19a4 4 0 0 1 8 0m0 0a4 4 0 0 1 8 0" /></svg></span>Members</a>
+          <a href="#circulation" data-view="circulation"><span class="dash-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M7 7h10a3 3 0 0 1 0 6H8m0 0 3-3m-3 3 3 3M17 17H7a3 3 0 0 1 0-6h1" /></svg></span>Circulation</a>
+          <a href="#analytics" data-view="analytics"><span class="dash-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 19V9m7 10V5m7 14v-7" /></svg></span>Analytics</a>
+          <a href="#content" data-view="content"><span class="dash-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 19h4l10-10-4-4L5 15zM14 6l4 4" /></svg></span>Content</a>
+          <a href="signin.html"><span class="dash-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M10 6H6v12h4m4-9 4 3-4 3m4-3H9" /></svg></span>Sign out</a>
+        </nav>
+      </aside>
+      <main class="dash-main">
+        <section class="dashboard-view active" id="overview">
+          <div class="dash-topbar">
+            <div>
+              <h1>Library operations overview</h1>
+              <p>
+                Monitor catalogue health, circulation, members and platform
+                engagement.
+              </p>
+            </div>
+            <div class="dash-top-actions">
+              <!-- <a class="dash-pill" href="#catalogue" data-jump-view="catalogue"
+                >+ Add resource</a
+              ><span class="dash-pill">ðŸ”” 8</span> -->
+            </div>
+          </div>
+          <section class="dash-kpis">
+            <article class="dash-card">
+              <small>Total Titles</small><strong>50,842</strong
+              ><span class="trend">↑ 428 this month</span>
+            </article>
+            <article class="dash-card">
+              <small>Active Members</small><strong>12,406</strong
+              ><span class="trend">↑ 7.2%</span>
+            </article>
+            <article class="dash-card">
+              <small>Current Loans</small><strong>3,218</strong
+              ><span class="trend">74% digital</span>
+            </article>
+            <article class="dash-card">
+              <small>Due Today</small><strong>286</strong
+              ><span class="trend">31 overdue risk</span>
+            </article>
+          </section>
+          <section class="charts-grid">
+            <article class="chart-card">
+              <div class="chart-title">
+                <h3>Monthly circulation</h3>
+                <span>Loans issued</span>
+              </div>
+              <div class="bar-chart">
+                <div class="bar-item"><i style="height: 110px"></i>Mar</div>
+                <div class="bar-item"><i style="height: 138px"></i>Apr</div>
+                <div class="bar-item"><i style="height: 127px"></i>May</div>
+                <div class="bar-item"><i style="height: 162px"></i>Jun</div>
+                <div class="bar-item"><i style="height: 178px"></i>Jul</div>
+                <div class="bar-item"><i style="height: 196px"></i>Aug</div>
+                <div class="bar-item"><i style="height: 170px"></i>Sep</div>
+              </div>
+            </article>
+            <article class="chart-card">
+              <div class="chart-title">
+                <h3>Collection usage</h3>
+                <span>All formats</span>
+              </div>
+              <div class="donut-wrap">
+                <div
+                  class="donut"
+                  style="
+                    background: conic-gradient(
+                      #7893a8 0 44%,
+                      #c4d0da 44% 71%,
+                      #aabcc9 71% 86%,
+                      #e5edf2 86% 100%
+                    );
+                  "
+                ></div>
+                <small style="color: #566675"
+                  >Books 44% • Journals 27% • Audio 15% • Other 14%</small
+                >
+              </div>
+            </article>
+          </section>
+        </section>
+        <section class="dashboard-view" id="catalogue">
+          <div class="dash-view-head">
+            <h2>Catalogue</h2>
+            <p>
+              Maintain titles, metadata, formats, accessibility information and
+              search indexing.
+            </p>
+          </div>
+          <div class="metric-row">
+            <article class="dash-card">
+              <small>Total titles</small><strong>50,842</strong
+              ><span class="trend">428 added this month</span>
+            </article>
+            <article class="dash-card">
+              <small>Metadata complete</small><strong>94%</strong
+              ><span class="trend">↑ 2.1%</span>
+            </article>
+            <article class="dash-card">
+              <small>Needs review</small><strong>312</strong
+              ><span class="trend">76 high priority</span>
+            </article>
+          </div>
+          <section class="dash-table-card">
+            <table class="dash-table">
+              <thead>
+                <tr>
+                  <th>Resource</th>
+                  <th>Format</th>
+                  <th>Collection</th>
+                  <th>Updated</th>
+                  <th>Status</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Modern Research Methods</td>
+                  <td>Ebook</td>
+                  <td>Education</td>
+                  <td>Today</td>
+                  <td><span class="status">Published</span></td>
+                </tr>
+                <tr>
+                  <td>Nature Journal Vol. 9</td>
+                  <td>Journal</td>
+                  <td>Science</td>
+                  <td>Today</td>
+                  <td><span class="status">Review</span></td>
+                </tr>
+                <tr>
+                  <td>Design Systems Audio</td>
+                  <td>Audiobook</td>
+                  <td>Design</td>
+                  <td>Yesterday</td>
+                  <td><span class="status">Published</span></td>
+                </tr>
+              </tbody>
+            </table>
+          </section>
+          <h2 class="dashboard-section-title">Catalogue health</h2>
+          <section class="dash-table-card">
+            <div class="dash-progress-list">
+              <div class="dash-progress-row">
+                <b>Metadata complete</b><i style="--p: 94%"></i><span>94%</span>
+              </div>
+              <div class="dash-progress-row">
+                <b>Cover assets</b><i style="--p: 88%"></i><span>88%</span>
+              </div>
+              <div class="dash-progress-row">
+                <b>Search indexed</b><i style="--p: 97%"></i><span>97%</span>
+              </div>
+              <div class="dash-progress-row">
+                <b>Accessible files</b><i style="--p: 82%"></i><span>82%</span>
+              </div>
+            </div>
+          </section>
+        </section>
+        <section class="dashboard-view" id="members">
+          <div class="dash-view-head">
+            <h2>Members</h2>
+            <p>
+              Review member activity, account status, borrowing eligibility and
+              support needs.
+            </p>
+          </div>
+          <div class="metric-row">
+            <article class="dash-card">
+              <small>Active members</small><strong>12,406</strong
+              ><span class="trend">↑ 7.2%</span>
+            </article>
+            <article class="dash-card">
+              <small>New this month</small><strong>684</strong
+              ><span class="trend">↑ 12%</span>
+            </article>
+            <article class="dash-card">
+              <small>Support cases</small><strong>23</strong
+              ><span class="trend">8 awaiting reply</span>
+            </article>
+          </div>
+          <section class="dash-table-card">
+            <table class="dash-table">
+              <thead>
+                <tr>
+                  <th>Member</th>
+                  <th>Plan</th>
+                  <th>Loans</th>
+                  <th>Last active</th>
+                  <th>Status</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Priya S.</td>
+                  <td>Student</td>
+                  <td>4</td>
+                  <td>10:42</td>
+                  <td><span class="status">Active</span></td>
+                </tr>
+                <tr>
+                  <td>Arjun M.</td>
+                  <td>Reader</td>
+                  <td>2</td>
+                  <td>10:21</td>
+                  <td><span class="status">Active</span></td>
+                </tr>
+                <tr>
+                  <td>Meera K.</td>
+                  <td>Reader</td>
+                  <td>5</td>
+                  <td>09:58</td>
+                  <td><span class="status">Review</span></td>
+                </tr>
+                <tr>
+                  <td>Daniel R.</td>
+                  <td>Educator</td>
+                  <td>1</td>
+                  <td>09:40</td>
+                  <td><span class="status">Active</span></td>
+                </tr>
+              </tbody>
+            </table>
+          </section>
+        </section>
+        <section class="dashboard-view" id="circulation">
+          <div class="dash-view-head">
+            <h2>Circulation</h2>
+            <p>
+              Track issued loans, due dates, renewals, returns and overdue
+              activity.
+            </p>
+          </div>
+          <div class="dash-kpis">
+            <article class="dash-card">
+              <small>Current loans</small><strong>3,218</strong
+              ><span class="trend">74% digital</span>
+            </article>
+            <article class="dash-card">
+              <small>Due today</small><strong>286</strong
+              ><span class="trend">31 high risk</span>
+            </article>
+            <article class="dash-card">
+              <small>Renewals today</small><strong>118</strong
+              ><span class="trend">92 approved</span>
+            </article>
+            <article class="dash-card">
+              <small>Returns today</small><strong>241</strong
+              ><span class="trend">96% on time</span>
+            </article>
+          </div>
+          <section class="dash-table-card">
+            <table class="dash-table">
+              <thead>
+                <tr>
+                  <th>Member</th>
+                  <th>Title</th>
+                  <th>Due</th>
+                  <th>Action</th>
+                  <th>Status</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Priya S.</td>
+                  <td>Research Methods</td>
+                  <td>Sep 10</td>
+                  <td>Renewal</td>
+                  <td><span class="status">Eligible</span></td>
+                </tr>
+                <tr>
+                  <td>Arjun M.</td>
+                  <td>Deep Work</td>
+                  <td>Sep 19</td>
+                  <td>Loan</td>
+                  <td><span class="status">Active</span></td>
+                </tr>
+                <tr>
+                  <td>Meera K.</td>
+                  <td>Design Journal 12</td>
+                  <td>Sep 07</td>
+                  <td>Return</td>
+                  <td><span class="status">Due today</span></td>
+                </tr>
+              </tbody>
+            </table>
+          </section>
+        </section>
+        <section class="dashboard-view" id="analytics">
+          <div class="dash-view-head">
+            <h2>Analytics</h2>
+            <p>
+              Understand member growth, collection usage, search behaviour and
+              operational performance.
+            </p>
+          </div>
+          <section class="charts-grid equal">
+            <article class="chart-card line-chart">
+              <div class="chart-title">
+                <h3>Member growth</h3>
+                <span>6 months</span>
+              </div>
+              <svg viewBox="0 0 560 220" preserveAspectRatio="none">
+                <polygon
+                  class="area"
+                  points="0,190 0,175 90,160 180,147 270,119 360,106 450,77 560,58 560,190"
+                />
+                <polyline
+                  points="0,175 90,160 180,147 270,119 360,106 450,77 560,58"
+                />
+              </svg>
+            </article>
+            <article class="chart-card">
+              <div class="chart-title">
+                <h3>Operational web chart</h3>
+                <span>Performance index</span>
+              </div>
+              <svg class="radar" viewBox="0 0 300 260">
+                <polygon
+                  class="gridline"
+                  points="150,22 257,84 257,178 150,238 43,178 43,84"
+                />
+                <polygon
+                  class="gridline"
+                  points="150,62 222,103 222,160 150,200 78,160 78,103"
+                />
+                <polygon
+                  class="value"
+                  points="150,35 244,91 225,168 150,222 61,168 78,104"
+                />
+                <text x="126" y="15">Catalogue</text>
+                <text x="252" y="82">Loans</text>
+                <text x="258" y="188">Search</text>
+                <text x="126" y="255">Support</text>
+                <text x="0" y="188">Content</text>
+                <text x="0" y="82">Members</text>
+              </svg>
+            </article>
+          </section>
+          <div class="resource-grid">
+            <article class="resource-card">
+              <h3>Most used format</h3>
+              <p>Ebooks account for 44% of all reading activity this month.</p>
+            </article>
+            <article class="resource-card">
+              <h3>Top discovery route</h3>
+              <p>Category browsing drives 38% of new resource opens.</p>
+            </article>
+            <article class="resource-card">
+              <h3>Engagement trend</h3>
+              <p>
+                Average weekly reading sessions are up 11.6% month over month.
+              </p>
+            </article>
+          </div>
+        </section>
+        <section class="dashboard-view" id="content">
+          <div class="dash-view-head">
+            <h2>Content</h2>
+            <p>
+              Manage featured collections, homepage highlights, reading lists
+              and editorial recommendations.
+            </p>
+          </div>
+          <div class="metric-row">
+            <article class="dash-card">
+              <small>Published collections</small><strong>46</strong
+              ><span class="trend">6 featured</span>
+            </article>
+            <article class="dash-card">
+              <small>Draft stories</small><strong>12</strong
+              ><span class="trend">4 ready for review</span>
+            </article>
+            <article class="dash-card">
+              <small>Scheduled updates</small><strong>8</strong
+              ><span class="trend">Next: tomorrow</span>
+            </article>
+          </div>
+          <div class="resource-grid">
+            <article class="resource-card">
+              <small>Featured Collection</small>
+              <h3>Modern Learning Essentials</h3>
+              <p>
+                12 selected titles for students, educators and independent
+                learners.
+              </p>
+              <span class="status">Published</span>
+            </article>
+            <article class="resource-card">
+              <small>Editorial Story</small>
+              <h3>Reading for Better Focus</h3>
+              <p>
+                A blog feature connecting deep reading with practical study
+                habits.
+              </p>
+              <span class="status">In review</span>
+            </article>
+            <article class="resource-card">
+              <small>Homepage Highlight</small>
+              <h3>New Research Journals</h3>
+              <p>
+                Six new science and technology journal issues ready to promote.
+              </p>
+              <span class="status">Scheduled</span>
+            </article>
+          </div>
+        </section>
+      </main>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

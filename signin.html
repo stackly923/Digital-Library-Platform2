@@ -1,0 +1,90 @@
+﻿<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width,initial-scale=1" name="viewport" />
+    <title>Sign In | STACKLY Digital Library</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&amp;family=Inter:wght@400;500;600;700&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link href="style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <header>
+      <a class="logo" href="index.html"><img class="brand-logo" src="images/stackly-logo-white-trimmed.webp" alt="STACKLY" /></a
+      ><button aria-label="Toggle navigation" class="nav-toggle">☰</button>
+      <nav class="auth-nav">
+        <a href="index.html">Home</a
+        ><a href="about.html">About</a
+        ><a href="services.html">Services</a
+        ><a href="categories.html">Categories</a
+        ><a href="blog.html">Blog</a
+        ><a href="contact.html">Contact</a
+        ><a class="signin active" href="signin.html">Sign In</a>
+      </nav>
+    </header>
+    <main>
+      <section class="form-page" id="signin-section">
+        <div class="auth-form-actions">
+          <a class="auth-back-home" href="index.html" aria-label="Back to home">Back to Home</a>
+        </div>
+        <div class="form-copy">
+          <a class="auth-image-logo" href="index.html"
+            ><img class="brand-logo" src="images/stackly-logo-white-trimmed.webp" alt="STACKLY" /></a
+          >
+          <p class="eyebrow"></p>
+          <h1>Welcome Back</h1>
+          <p class="lead">
+            Choose your library role, sign in securely and continue directly to
+            the workspace designed for you.
+          </p>
+        </div>
+        <div class="auth-panel-stack">
+          <form class="panel" id="roleLogin">
+            <label
+              >Email address<input
+                name="email"
+                placeholder="reader@example.com"
+                required=""
+                type="email" /></label
+            ><label
+              >Password<input
+                placeholder="Enter your password"
+                required=""
+                type="password"
+            /></label>
+           <!--- <p class="signin-note">
+              Choose a role below. Your dashboard will open automatically after
+              sign in.
+            </p>--->
+            <div class="role-picker">
+              <label class="role-card active"
+                ><input
+                  checked=""
+                  name="role"
+                  type="radio"
+                  value="member"
+                /><strong> Member / Reader</strong
+                ><span>Personal library access</span></label
+              ><label class="role-card"
+                ><input name="role" type="radio" value="admin" /><strong
+                  > Librarian / Admin</strong
+                ><span>Library management access</span></label
+              >
+            </div>
+            <div class="form-row">
+              <label><input type="checkbox" /> Remember me</label
+              ><a href="404.html?from=signin&return=signin.html%23signin-section">Forgot password?</a>
+            </div>
+            <button class="primary" type="submit">Sign In </button>
+            <p class="account-switch">
+              New to STACKLY? <a href="register.html">Create an account</a>
+            </p>
+          </form>
+        </div>
+      </section>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>

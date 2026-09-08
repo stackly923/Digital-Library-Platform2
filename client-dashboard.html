@@ -1,0 +1,366 @@
+﻿<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Member / Reader Dashboard | STACKLY Digital Library</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="dash-shell">
+      <button class="dash-hamburger" type="button" aria-label="Open dashboard menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <button class="dash-scrim" type="button" aria-label="Close dashboard menu"></button>
+      <aside class="dash-sidebar">
+        <div class="dash-brand"><img class="brand-logo" src="images/stackly-logo-white-trimmed.webp" alt="STACKLY" /></div>
+        <div class="dash-user">
+          <b>Member / Reader</b><small></small>
+        </div>
+        <nav class="dash-menu">
+          <a class="active" href="#overview" data-view="overview"><span class="dash-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 11.5 12 5l8 6.5V20h-5v-5H9v5H4z" /></svg></span>Overview</a>
+          <a href="#reading" data-view="reading"><span class="dash-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 5.5A4.5 4.5 0 0 1 12 9a4.5 4.5 0 0 1 7-3.5V19a4.5 4.5 0 0 0-7 1 4.5 4.5 0 0 0-7-1z" /></svg></span>Reading</a>
+          <a href="#saved" data-view="saved"><span class="dash-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M6 4h12v17l-6-3.5L6 21z" /></svg></span>Saved</a>
+          <a href="#loans" data-view="loans"><span class="dash-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M7 7h10a3 3 0 0 1 0 6H8m0 0 3-3m-3 3 3 3M17 17H7a3 3 0 0 1 0-6h1" /></svg></span>Loans</a>
+          <a href="#analytics" data-view="analytics"><span class="dash-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 19V9m7 10V5m7 14v-7" /></svg></span>Analytics</a>
+          <a href="#discover" data-view="discover"><span class="dash-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="6" /><path d="m16 16 4 4" /></svg></span>Discover</a>
+          <a href="signin.html"><span class="dash-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M10 6H6v12h4m4-9 4 3-4 3m4-3H9" /></svg></span>Sign out</a>
+        </nav>
+      </aside>
+      <main class="dash-main">
+        <section class="dashboard-view active" id="overview">
+          <div class="dash-topbar">
+            <div>
+              <h1>Good to see you again.</h1>
+              <p>
+                Your reading, saved titles, loans and learning insights in one
+                place.
+              </p>
+            </div>
+            <div class="dash-top-actions">
+              <!-- <a class="dash-pill" href="#discover" data-jump-view="discover"
+                >+ Find a book</a
+              ><span class="dash-pill"></span> -->
+            </div>
+          </div>
+          <section class="dash-kpis">
+            <article class="dash-card">
+              <small>Books Borrowed</small><strong>4</strong
+              ><span class="trend">↑ 1 this week</span>
+            </article>
+            <article class="dash-card">
+              <small>Saved Titles</small><strong>18</strong
+              ><span class="trend">↑ 3 this month</span>
+            </article>
+            <article class="dash-card">
+              <small>Hours Read</small><strong>32.4</strong
+              ><span class="trend">↑ 18% vs last month</span>
+            </article>
+            <article class="dash-card">
+              <small>Reading Streak</small><strong>12 days</strong
+              ><span class="trend">Best: 21 days</span>
+            </article>
+          </section>
+          <section class="charts-grid">
+            <article class="chart-card">
+              <div class="chart-title">
+                <h3>Weekly reading minutes</h3>
+                <span>Last 7 days</span>
+              </div>
+              <div class="bar-chart">
+                <div class="bar-item"><i style="height: 80px"></i>Mon</div>
+                <div class="bar-item"><i style="height: 125px"></i>Tue</div>
+                <div class="bar-item"><i style="height: 105px"></i>Wed</div>
+                <div class="bar-item"><i style="height: 155px"></i>Thu</div>
+                <div class="bar-item"><i style="height: 120px"></i>Fri</div>
+                <div class="bar-item"><i style="height: 190px"></i>Sat</div>
+                <div class="bar-item"><i style="height: 145px"></i>Sun</div>
+              </div>
+            </article>
+            <article class="chart-card">
+              <div class="chart-title">
+                <h3>Reading by format</h3>
+                <span>This month</span>
+              </div>
+              <div class="donut-wrap">
+                <div class="donut"></div>
+                <small style="color: #566675"
+                  >Ebooks 56% • Journals 22% • Audio 22%</small
+                >
+              </div>
+            </article>
+          </section>
+        </section>
+        <section class="dashboard-view" id="reading">
+          <div class="dash-view-head">
+            <h2>Reading</h2>
+            <p>
+              Continue active books, track chapter progress and return to your
+              latest reading point.
+            </p>
+          </div>
+          <div class="resource-grid">
+            <article class="resource-card">
+              <small>62% complete</small>
+              <h3>Atomic Habits</h3>
+              <p>Continue from Chapter 11. Your last session was 28 minutes.</p>
+              <span class="status">Continue reading</span>
+            </article>
+            <article class="resource-card">
+              <small>81% complete</small>
+              <h3>Deep Work</h3>
+              <p>Continue from Part 3 with your saved notes and highlights.</p>
+              <span class="status">Continue reading</span>
+            </article>
+            <article class="resource-card">
+              <small>48% complete</small>
+              <h3>The Design of Everyday Things</h3>
+              <p>Resume your current chapter and review 6 saved highlights.</p>
+              <span class="status">Continue reading</span>
+            </article>
+          </div>
+          <h2 class="dashboard-section-title">Reading progress</h2>
+          <section class="dash-table-card">
+            <div class="dash-progress-list">
+              <div class="dash-progress-row">
+                <b>Atomic Habits</b><i style="--p: 62%"></i><span>62%</span>
+              </div>
+              <div class="dash-progress-row">
+                <b>Psychology of Money</b><i style="--p: 35%"></i
+                ><span>35%</span>
+              </div>
+              <div class="dash-progress-row">
+                <b>Deep Work</b><i style="--p: 81%"></i><span>81%</span>
+              </div>
+              <div class="dash-progress-row">
+                <b>Design of Everyday Things</b><i style="--p: 48%"></i
+                ><span>48%</span>
+              </div>
+            </div>
+          </section>
+        </section>
+        <section class="dashboard-view" id="saved">
+          <div class="dash-view-head">
+            <h2>Saved</h2>
+            <p>
+              Your personal shelf of books, journals and research resources to
+              revisit later.
+            </p>
+          </div>
+          <div class="metric-row">
+            <article class="dash-card">
+              <small>Total saved</small><strong>18</strong
+              ><span class="trend">Across 6 subjects</span>
+            </article>
+            <article class="dash-card">
+              <small>Reading lists</small><strong>4</strong
+              ><span class="trend">2 shared lists</span>
+            </article>
+            <article class="dash-card">
+              <small>Saved this month</small><strong>7</strong
+              ><span class="trend">3 new this week</span>
+            </article>
+          </div>
+          <div class="resource-grid">
+            <article class="resource-card">
+              <small>Finance • Ebook</small>
+              <h3>The Psychology of Money</h3>
+              <p>Saved for your personal finance learning list.</p>
+              <span class="status">Saved</span>
+            </article>
+            <article class="resource-card">
+              <small>Science • Journal</small>
+              <h3>Nature Journal — Vol. 8</h3>
+              <p>Research issue saved for your weekend study session.</p>
+              <span class="status">Saved</span>
+            </article>
+            <article class="resource-card">
+              <small>Technology • Ebook</small>
+              <h3>Clean Architecture</h3>
+              <p>Saved under your software engineering reading list.</p>
+              <span class="status">Saved</span>
+            </article>
+          </div>
+        </section>
+        <section class="dashboard-view" id="loans">
+          <div class="dash-view-head">
+            <h2>Loans</h2>
+            <p>
+              Manage active borrowings, due dates, renewals and completed
+              returns.
+            </p>
+          </div>
+          <section class="dash-table-card">
+            <table class="dash-table">
+              <thead>
+                <tr>
+                  <th>Title</th>
+                  <th>Format</th>
+                  <th>Borrowed</th>
+                  <th>Due</th>
+                  <th>Status</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Atomic Habits</td>
+                  <td>Ebook</td>
+                  <td>Aug 24</td>
+                  <td>Sep 14</td>
+                  <td><span class="status">Reading</span></td>
+                </tr>
+                <tr>
+                  <td>Deep Work</td>
+                  <td>Ebook</td>
+                  <td>Aug 29</td>
+                  <td>Sep 19</td>
+                  <td><span class="status">Reading</span></td>
+                </tr>
+                <tr>
+                  <td>Nature Journal Vol. 8</td>
+                  <td>Journal</td>
+                  <td>Sep 01</td>
+                  <td>Sep 08</td>
+                  <td><span class="status">Due soon</span></td>
+                </tr>
+              </tbody>
+            </table>
+          </section>
+          <h2 class="dashboard-section-title">Loan summary</h2>
+          <div class="resource-grid">
+            <article class="resource-card">
+              <h3>Renewals available</h3>
+              <p>
+                2 active loans can be renewed if no other member has requested
+                them.
+              </p>
+            </article>
+            <article class="resource-card">
+              <h3>Due soon</h3>
+              <p>1 journal is due within the next 48 hours.</p>
+            </article>
+            <article class="resource-card">
+              <h3>Borrowing history</h3>
+              <p>You have completed 26 digital loans this year.</p>
+            </article>
+          </div>
+        </section>
+        <section class="dashboard-view" id="analytics">
+          <div class="dash-view-head">
+            <h2>Analytics</h2>
+            <p>
+              See how your reading time, subject interests and consistency are
+              developing.
+            </p>
+          </div>
+          <section class="charts-grid equal">
+            <article class="chart-card line-chart">
+              <div class="chart-title">
+                <h3>Reading consistency</h3>
+                <span>6 months</span>
+              </div>
+              <svg viewBox="0 0 560 220" preserveAspectRatio="none">
+                <polygon
+                  class="area"
+                  points="0,190 0,165 90,145 180,160 270,105 360,120 450,72 560,55 560,190"
+                />
+                <polyline
+                  points="0,165 90,145 180,160 270,105 360,120 450,72 560,55"
+                />
+              </svg>
+            </article>
+            <article class="chart-card">
+              <div class="chart-title">
+                <h3>Interest web</h3>
+                <span>Personal profile</span>
+              </div>
+              <svg class="radar" viewBox="0 0 300 260">
+                <polygon
+                  class="gridline"
+                  points="150,22 257,84 257,178 150,238 43,178 43,84"
+                />
+                <polygon
+                  class="gridline"
+                  points="150,62 222,103 222,160 150,200 78,160 78,103"
+                />
+                <polygon
+                  class="value"
+                  points="150,48 235,93 205,157 150,218 67,166 88,109"
+                />
+                <text x="137" y="15">Science</text>
+                <text x="255" y="82">Business</text>
+                <text x="258" y="188">History</text>
+                <text x="130" y="255">Fiction</text>
+                <text x="2" y="188">Design</text>
+                <text x="5" y="82">Finance</text>
+              </svg>
+            </article>
+          </section>
+          <div class="metric-row">
+            <article class="dash-card">
+              <small>Average session</small><strong>36 min</strong
+              ><span class="trend">↑ 5 min</span>
+            </article>
+            <article class="dash-card">
+              <small>Top subject</small><strong>Science</strong
+              ><span class="trend">28% of reading</span>
+            </article>
+            <article class="dash-card">
+              <small>Pages this month</small><strong>684</strong
+              ><span class="trend">↑ 14%</span>
+            </article>
+          </div>
+        </section>
+        <section class="dashboard-view" id="discover">
+          <div class="dash-view-head">
+            <h2>Discover</h2>
+            <p>
+              Explore recommendations based on your interests, recent reading
+              and saved topics.
+            </p>
+          </div>
+          <form class="search-mock" action="404.html" style="margin-bottom: 18px">
+            <input
+              aria-label="Search title, author, subject, ISBN or keyword"
+              placeholder="Search title, author, subject, ISBN or keyword..."
+              required=""
+              type="search"
+            /><button class="primary" type="submit">Search Library</button>
+          </form>
+          <div class="resource-grid">
+            <article class="resource-card">
+              <small>Recommended • Science</small>
+              <h3>A Brief History of Time</h3>
+              <p>
+                Suggested because you frequently read science and research
+                titles.
+              </p>
+              <span class="status">Available now</span>
+            </article>
+            <article class="resource-card">
+              <small>Recommended • Business</small>
+              <h3>Good Strategy Bad Strategy</h3>
+              <p>
+                Popular with readers who saved productivity and business books.
+              </p>
+              <span class="status">Available now</span>
+            </article>
+            <article class="resource-card">
+              <small>Recommended • Audio</small>
+              <h3>Thinking, Fast and Slow</h3>
+              <p>
+                An audiobook recommendation matched to your learning history.
+              </p>
+              <span class="status">Available now</span>
+            </article>
+          </div>
+        </section>
+      </main>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

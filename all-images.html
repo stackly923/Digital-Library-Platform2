@@ -1,0 +1,223 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width,initial-scale=1" name="viewport" />
+    <title>All Images | STACKLY Digital Library</title>
+    <link href="style.css" rel="stylesheet" />
+    <style>
+      body {
+        padding-top: 92px;
+        background: #f7f9fa;
+      }
+      .image-library-page {
+        padding: 56px 5vw 80px;
+      }
+      .image-library-head {
+        max-width: 980px;
+        margin: 0 auto 34px;
+      }
+      .image-library-head h1 {
+        margin: 10px 0;
+        font: 700 clamp(40px, 6vw, 76px) / 1 "Cormorant Garamond", serif;
+      }
+      .image-library-head p {
+        max-width: 720px;
+        color: #566675;
+        line-height: 1.7;
+      }
+      .full-quality-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 22px;
+      }
+      .full-quality-grid figure {
+        margin: 0;
+        overflow: hidden;
+        border: 1px solid #d7e0e7;
+        border-radius: 8px;
+        background: #ffffff;
+        box-shadow: 0 16px 38px rgba(38, 55, 70, 0.08);
+      }
+      .full-quality-grid a {
+        display: block;
+        background: #eef3f6;
+      }
+      .full-quality-grid img {
+        display: block;
+        width: 100%;
+        height: auto;
+        image-rendering: auto;
+      }
+      .full-quality-grid figcaption {
+        display: grid;
+        gap: 6px;
+        padding: 13px 14px 16px;
+        color: #263746;
+        font-size: 13px;
+        overflow-wrap: anywhere;
+      }
+      .full-quality-grid figcaption span {
+        color: #6f899d;
+        font-weight: 700;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <a class="logo" href="index.html"><img class="brand-logo" src="images/stackly-logo-white-trimmed.webp" alt="STACKLY" /></a
+      ><button aria-label="Toggle navigation" class="nav-toggle">☰</button>
+      <nav>
+        <a href="index.html">Home</a
+        ><a href="about.html">About</a
+        ><a href="services.html">Services</a
+        ><a href="categories.html">Categories</a
+        ><a href="blog.html">Blog</a
+        ><a href="contact.html">Contact</a
+        ><a class="active" href="all-images.html">Images</a
+        ><a class="signin" href="signin.html">Sign In</a>
+      </nav>
+    </header>
+    <main class="image-library-page">
+      <section class="image-library-head">
+        <p class="eyebrow">IMAGE GALLERY</p>
+        <h1>All Images</h1>
+        <p>
+          Browse all website images. Open any image to view it at its full size.
+        </p>
+      </section>
+      <section class="full-quality-grid" id="full-quality-grid" aria-label="All website images"></section>
+    </main>
+    <script>
+      const images = [
+        "stackly-logo-preview.jpg.webp",
+        "stackly-logo-preview.webp",
+        "stackly-logo-preview.webp",
+        "stackly-logo-preview-trimmed.jpg.webp",
+        "stackly-logo-preview-trimmed.webp",
+        "stackly-logo-preview-trimmed.webp",
+        "images/404-library-background.jpg.webp",
+        "images/404-library-background.webp",
+        "images/404-library-background.webp",
+        "images/about-knowledge-collection.jpg.webp",
+        "images/about-knowledge-collection.webp",
+        "images/about-knowledge-collection.webp",
+        "images/about-learning-community.jpg.webp",
+        "images/about-learning-community.webp",
+        "images/about-learning-community.webp",
+        "images/about-modern-library.jpg.webp",
+        "images/about-modern-library.webp",
+        "images/about-modern-library.webp",
+        "images/about-reader-researching.jpeg.webp",
+        "images/about-reader-researching.webp",
+        "images/about-reader-researching.webp",
+        "images/blog-community-learning.jpg.webp",
+        "images/blog-community-learning.webp",
+        "images/blog-community-learning.webp",
+        "images/blog-digital-reading.jpg.webp",
+        "images/blog-digital-reading.webp",
+        "images/blog-digital-reading.webp",
+        "images/blog-reading-habits.jpg.webp",
+        "images/blog-reading-habits.webp",
+        "images/blog-reading-habits.webp",
+        "images/blog-research-story.jpg.webp",
+        "images/blog-research-story.webp",
+        "images/blog-research-story.webp",
+        "images/categories-book-shelf.jpg.webp",
+        "images/categories-book-shelf.webp",
+        "images/categories-book-shelf.webp",
+        "images/categories-explore-screen.jpg.webp",
+        "images/categories-explore-screen.webp",
+        "images/categories-explore-screen.webp",
+        "images/categories-featured-books.jpg.webp",
+        "images/categories-featured-books.webp",
+        "images/categories-featured-books.webp",
+        "images/categories-subject-display.jpeg.webp",
+        "images/categories-subject-display.webp",
+        "images/categories-subject-display.webp",
+        "images/contact-help-desk.jpg.webp",
+        "images/contact-help-desk.webp",
+        "images/contact-help-desk.webp",
+        "images/contact-library-team.jpg.webp",
+        "images/contact-library-team.webp",
+        "images/contact-library-team.webp",
+        "images/contact-membership-card.jpg.webp",
+        "images/contact-membership-card.webp",
+        "images/contact-membership-card.webp",
+        "images/hero-about.jpg.webp",
+        "images/hero-about.webp",
+        "images/hero-about.webp",
+        "images/hero-blog.jpg.webp",
+        "images/hero-blog.webp",
+        "images/hero-blog.webp",
+        "images/hero-categories.jpg.webp",
+        "images/hero-categories.webp",
+        "images/hero-categories.webp",
+        "images/hero-contact.jpg.webp",
+        "images/hero-contact.webp",
+        "images/hero-contact.webp",
+        "images/hero-home.jpg.webp",
+        "images/hero-home.webp",
+        "images/hero-home.webp",
+        "images/hero-services.jpg.webp",
+        "images/hero-services.webp",
+        "images/hero-services.webp",
+        "images/register-library-reading.jpg.webp",
+        "images/register-library-reading.webp",
+        "images/register-library-reading.webp",
+        "images/services-audiobooks.jpg.webp",
+        "images/services-audiobooks.webp",
+        "images/services-audiobooks.webp",
+        "images/services-digital-platform.jpg.webp",
+        "images/services-digital-platform.webp",
+        "images/services-digital-platform.webp",
+        "images/services-library-kiosk.jpg.webp",
+        "images/services-library-kiosk.webp",
+        "images/services-library-kiosk.webp",
+        "images/services-research-desk.jpg.webp",
+        "images/services-research-desk.webp",
+        "images/services-research-desk.webp",
+        "images/signin-library-role.jpg.webp",
+        "images/signin-library-role.webp",
+        "images/signin-library-role.webp",
+        "images/stackly-logo-white.jpg.webp",
+        "images/stackly-logo-white.webp",
+        "images/stackly-logo-white.webp",
+        "images/stackly-logo-white-trimmed.jpg.webp",
+        "images/stackly-logo-white-trimmed.webp",
+        "images/stackly-logo-white-trimmed.webp"
+      ];
+
+      const grid = document.querySelector("#full-quality-grid");
+      const formatter = new Intl.NumberFormat(undefined, { maximumFractionDigits: 1 });
+
+      [...new Set(images)].forEach((src) => {
+        const figure = document.createElement("figure");
+        const link = document.createElement("a");
+        const img = document.createElement("img");
+        const caption = document.createElement("figcaption");
+        const meta = document.createElement("span");
+
+        link.href = src;
+        link.target = "_blank";
+        link.rel = "noopener";
+        img.src = src;
+        img.alt = src.split("/").pop().replace(/\.[^.]+$/, "").replaceAll("-", " ");
+        img.loading = "lazy";
+        img.decoding = "async";
+        meta.textContent = "WebP image";
+
+        img.addEventListener("load", () => {
+          const megapixels = (img.naturalWidth * img.naturalHeight) / 1000000;
+          meta.textContent = `${img.naturalWidth} x ${img.naturalHeight}px, ${formatter.format(megapixels)}MP`;
+        });
+
+        caption.append(src, meta);
+        link.append(img);
+        figure.append(link, caption);
+        grid.append(figure);
+      });
+    </script>
+    <script src="script.js"></script>
+  </body>
+</html>
