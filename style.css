@@ -1,4 +1,4 @@
-﻿:root {
+:root {
   --ink: #263746;
   --deep: #263746;
   --gold: #8ea4b5;
@@ -1401,6 +1401,25 @@ header .auth-nav .signup:hover {
   background: #7893a8;
   color: white;
 }
+.dash-menu a.dash-signout {
+  margin-top: 10px;
+  background: rgba(255, 255, 255, 0.12);
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  color: #ffffff;
+  font-weight: 700;
+}
+.dash-menu a.dash-signout .dash-icon {
+  background: rgba(255, 255, 255, 0.18);
+  color: #ffffff;
+}
+.dash-menu a.dash-signout:hover {
+  background: #ffffff;
+  color: #263746;
+}
+.dash-menu a.dash-signout:hover .dash-icon {
+  background: #e5edf2;
+  color: #263746;
+}
 .dash-main {
   padding: 28px 32px;
 }
@@ -1635,6 +1654,14 @@ header .auth-nav .signup:hover {
     justify-content: center;
     gap: 0;
     font-size: 0;
+  }
+  .dash-menu a.dash-signout {
+    flex-direction: column;
+    gap: 5px;
+    padding: 9px 6px;
+    font-size: 10px;
+    line-height: 1.1;
+    text-align: center;
   }
   .dash-kpis {
     grid-template-columns: repeat(2, 1fr);
